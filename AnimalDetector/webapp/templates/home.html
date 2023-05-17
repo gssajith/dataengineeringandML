@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    </body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AnimalDetector</title>
+    <h1>Detect the Animal</h1>
+</head>
+    <body>Upload your Image and find the name of the animal
+  <form action="imageprocess" method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input id="image" type="file" name="image" accept="image/*" required>
+    <br>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
